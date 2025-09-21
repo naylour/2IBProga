@@ -1,0 +1,165 @@
+code, pre code {
+    font-family: 'Cascadia Code', monospace;
+    font-size: 14px !important;
+}
+
+/* ================= Заголовки ================= */
+h1,
+h2 {
+    page-break-before: always;
+}
+
+h1:first-of-type {
+    page-break-before: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Rubik", sans-serif !important;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-weight: 500 !important;
+}
+
+h1 {
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+
+h1:first-of-type,
+h2:first-of-type,
+h3:first-of-type,
+h4:first-of-type,
+h5:first-of-type,
+h6:first-of-type {
+    margin-top: 0;
+}
+
+/* ================= Принудительный разрыв страницы ================= */
+.page-break {
+  page-break-before: always;
+}
+
+
+/* ================= Код ================= */
+pre,
+.markdown-preview-view pre,
+.markdown-preview-view code,
+.markdown-preview-view .code-block {
+  page-break-inside: avoid;  /* блок не рвётся */
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+
+/* ================= Metadat Container ================= */
+.metadata-container,
+.cm-properties {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    border: 1px solid #aaa;
+    padding: 0.8em;
+    border-radius: 12px;
+}
+
+.metadata-property-key {
+    font-weight: bold;
+}
+
+
+/* ================= Таблицы ================= */
+table {
+    /* колонки подстраиваются */
+    table-layout: auto;
+    /* растянуть на всю ширину */
+    width: 100%;
+    border-collapse: collapse;
+
+    /* чуть меньше шрифт */
+    font-size: 0.60em;
+}
+
+td,
+th {
+    padding: 4px 8px;
+    /* перенос длинных слов */
+    word-break: break-word;
+    white-space: normal;
+}
+
+.markdown-preview-view table {
+    /* длинные таблицы можно разбивать */
+    page-break-inside: auto;
+}
+
+
+/* Контейнер титульной страницы */
+.title-page-container {
+  text-align: start;
+  page-break-inside: avoid; /* всё внутри блока не разрывается */
+  margin-top: 150px;
+}
+
+/* Заголовок */
+.title-page-container  .page-title {
+  font-size: 2em;
+  margin-bottom: 2em;
+  font-weight: 700;
+}
+
+/* Таблица метаданных */
+.metadata-table {
+  width: 60%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 1em;
+}
+
+.metadata-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.metadata-table tr:last-child td {
+  border-bottom: none;
+}
+
+.metadata-table td:first-child {
+  font-weight: bold;
+  width: 30%;
+  background-color: #f7f7f7;
+}
+
+/* Центрирование текста */
+figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  font-style: italic;
+  color: var(--text-muted); /* использует тему */
+  border-radius: 0 0 24px 24px !important;
+}
+
+/* Если хочешь добавить рамку вокруг всего блока */
+figure {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 24px 24px 0 0 !important;
+  padding: 6px 6px 2px !important;
+  margin: 12px auto;
+  display: inline-block;
+}
+
+figure img {
+    object-fit: cover !important;
+    border-radius: 20px !important;
+}
+
+.ignore-export {
+    /* display: none; */
+}

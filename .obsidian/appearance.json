@@ -1,0 +1,9 @@
+{
+  "cssTheme": "",
+  "textFontFamily": "Manrope",
+  "monospaceFontFamily": "Cascadia Code",
+  "theme": "system",
+  "enabledCssSnippets": [
+    "setup"
+  ]
+}
