@@ -1,5 +1,6 @@
 [
   "better-export-pdf",
   "templater-obsidian",
-  "image-captions"
+  "image-captions",
+  "obsidian-plugin-toc"
 ]
